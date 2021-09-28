@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]> <html class="oldie" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toolkit for Web Accessibility</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="navbar is-white" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+            <i class="fab fa-accessible-icon"> Toolkit for Web Accessibility</i>
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasic" class="navbar-menu">
+        <div class="navbar-start">
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="introduction.html">
+                    Introduction
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                    <a class="navbar-item" href="introduction.html#Compliance">
+                        Accessibility Compliance
+                    </a>
+                    <a class="navbar-item" href="introduction.html#Advice">
+                        Implementation Advice
+                    </a>
+                    <a class="navbar-item" href="introduction.html#Evaluation">
+                        General Evaluation Tools
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="introduction.html">
+                    Main Content
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                    <a class="navbar-item" href="vision.html">
+                        Visual impairments
+                    </a>
+
+                    <a class="navbar-item" href="understandable.html">
+                        Cognitive Limitations
+                    </a>
+
+                    <a class="navbar-item" href="hearing.html">
+                        Auditory impairments
+                    </a>
+
+                    <a class="navbar-item" href="mobility.html">
+                        Motor Limitations
+                    </a>
+                </div>
+            </div>
+
+            <a class="navbar-item" href="about.html">
+                About
+            </a>
+
+        </div>
+    </div>
+
+    <div class="navbar-end">
+        <div class="navbar-item">
+            <div class="buttons">
+                <a class="button is-primary">
+                    <strong>Contact us</strong>
+                </a>
+                <a class="fas fa-adjust">
+                    Contrast
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</nav>
+
+    <section class="section">
+
+        <div class="container">
+            <div class="tile">
+                <div class="tile is vertical is -parent is-3">
+                    <div class="box">
+                        <aside class="menu">
+                            <p class="menu-label">
+                                Visual impairments
+                            </p>
+                            <ul class="menu-list">
+                                <li><a href="#low_vision"><strong>Low Vision</strong></a></li>
+                                <li>
+                                    <a href="#color_blindness">Color-blindness</a>
+                                    <ul>
+                                        <li><a href="#types_of_color_blindness">Types of color-blindness</a></li>
+                                        <li><a href="#toolkit">The toolkit to help color-blindness people</a></li>
+                                        <li><a href="#design">Designing for Color-blindness</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#blindness"><strong>Blindness</strong></a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+                <div class="tile is-vertical is-parent is-9">
+                    <div class="box">
+                        <div class="container">
+                            <h1 class="title">
+                                Visual Impairments
+                            </h1>
+                            <br>
+                            <p class="subtitle">
+                                <strong>Introduction</strong>
+                            </p>
+                            <p>
+                                Some people have visual impairment, which is often defined as legal blindness as a
+                                condition where the best corrected visual acuity is equal to or less than 20/200, or
+                                where the person's field of vision is equal to or less than 20 degrees. A visual acuity
+                                of 20/200 means that the person would have to stand 20 feet away to see what a person
+                                with 20/20 vision could see from a distance of 200 feet. Blind people can use a variety
+                                of assistive technologies to support common tasks, such as using the Internet (WebAIM,
+                                2020).
+                            </p>
+                            <br>
+                            <p>
+                                Another category of visual disability is low vision - usually considered to be
+                                uncorrectable to near 20/20 vision. It is common among the elderly, but young people can
+                                suffer from this disability, whether due to genetics, trauma or disease.
+                            </p>
+                            <br>
+                            <p>
+                                The third category of visual impairment is colour blindness or colour-blindness,
+                                although it may be an overstatement to call colour-blindness a true impairment, since it
+                                is a condition with few real limitations. Nonetheless, it is helpful to be aware of
+                                colour-blindness when designing Web content.
+                            </p>
+                            <br>
+                            <p class="subtitle">
+                                <strong>Tips</strong>
+                            </p>
+                            <p>
+                                The key principle of web accessibility for people with low vision is
+                                <br>
+                                <strong>perceivable</strong> - smaller, poorly magnified or low-contrast content may be
+                                difficult to perceive.
+                            </p>
+                            <br>
+                            <div id="low_vision">
+                                <h1 class="title">
+                                    Low Vision
+                                </h1>
+                                <br>
+                                <p class="subtitle">
+                                    <strong>The Types of Low Vision</strong>
+                                </p>
+                                <p>
+                                    People with low vision have highly variable vision, but low vision is usually
+                                    defined as a condition in which a person's vision is not fully corrected by glasses
+                                    and interferes with daily activities such as reading and driving. Amblyopia is more
+                                    common in the elderly, but low vision can occur at any age due to conditions such as
+                                    macular degeneration, glaucoma, diabetic retinopathy, or cataracts.
+                                </p>
+                                <br>
+                                <p class="subtitle">
+                                    <strong>The Toolkit to Help Low Vision People</strong>
+                                </p>
+                                <div class="box">
+                                    <div class="media">
+                                        <ol>
+                                            <li>
+                                                <p><strong>Screen Magnifiers and Zoom:</strong></p>
+                                                <p>Screen magnification or zooming is the most common technique used by people
+                                                    with low vision. Software or operating system settings can be used to
+                                                    magnify the entire screen or parts of the screen so that people with low
+                                                    vision can see it more clearly. Users can also use browser settings to zoom
+                                                    in on a web page or increase its default text size. However, certain content
+                                                    can be difficult to interpret when zoomed in or out. For example, graphics
+                                                    containing text may become blocky and pixelated when zoomed in, making the
+                                                    text difficult to read. Consider the two images below(WebAIM, 2020).
+                                                </p>
+                                                <br>
+                                                <p>
+                                                    <strong>Tips:</strong><br>
+                                                    To make text more legible when zoomed in, please use real text wherever
+                                                    possible rather than text in graphics. Pages should be designed so that no
+                                                    content or functionality is lost when zooming/zooming or increasing text
+                                                    size. Where possible, avoid horizontal scrolling - it is particularly
+                                                    difficult to read page content when users must scroll or pan to read lines
+                                                    of text that extend beyond the screen. Implementing responsive/adaptive
+                                                    design to support small screens and mobile devices will also better ensure
+                                                    that content adapts to the screen as it is zoomed or enlarged.
+                                                </p>
+                                            </li>
+                                            <br>
+                                            <li>
+                                                <p><strong>High Contrast and Customized Colors:</strong></p>
+                                                <p>
+                                                    Web content with low contrast (i.e., the difference in brightness between
+                                                    text or graphics and their backgrounds) can be difficult to read, especially
+                                                    for people with low vision. Some colour combinations are not easy for
+                                                    anyone, especially for people with low vision. Colour contrast can be
+                                                    checked using <strong> <a
+                                                        href="https://webaim.org/resources/contrastchecker/"
+                                                        target="blank">WebAIM's</a> </strong> Contrast Checker to ensure
+                                                    that it meets the WCAG 2.1 AA guidelines.
+                                                </p>
+                                                <br>
+                                                <p>
+                                                    While authors should ensure that their content has adequate contrast,
+                                                    certain users with poor vision may require greater contrast. Some may
+                                                    benefit from specific colour combinations, such as blue text on a yellow
+                                                    background. Users with poor vision can enable high contrast mode, or
+                                                    override the default colours through settings in their operating system or
+                                                    web browser. With these features enabled, users may not see the
+                                                    author-defined page colours ("Web Content Accessibility Guidelines (WCAG)
+                                                    2.1", 2020).
+                                                </p>
+                                                <br>
+                                                <p>
+                                                    <strong>Tips:</strong><br>
+                                                    Maximize the contrast of your web pages, including graphics, fonts, and
+                                                    backgrounds. Ensure that colour is not used as the only way to indicate or
+                                                    differentiate meaning or content.
+                                                </p>
+                                                <br>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="color_blindness">
+                                <h1 class="title">
+                                    Color-blindness
+                                </h1>
+                            </div>
+                            <br>
+                            <div id="types_of_color_blindness">
+                                <p class="subtitle">
+                                    <strong>Types of Color-blindness</strong>
+                                </p>
+                                <p>
+                                    Color blindness or lack of color vision is the inability to distinguish between
+                                    certain shades of color. This is an interesting topic due to its complexity. There
+                                    are three types of photoreceptors in the eye. Each is responsible for detecting
+                                    different wavelengths of color. In addition, there are photoreceptors that detect
+                                    the intensity of light, called rods. If these types of photoreceptors are missing or
+                                    they are not functioning correctly, color blindness may occur. The most common type
+                                    of color blindness is a lack of red and green - this does not mean that you cannot
+                                    see red and/or green, but certain shades of red and green may be difficult to
+                                    distinguish.
+                                </p>
+                                <br>
+                                <p>
+                                    <strong>Tips:</strong><br>
+                                    The key principle of web accessibility for users with color-blindness is:<br>
+                                    Perceivable: the difference between certain color combinations may be difficult to
+                                    perceive.
+                                </p>
+                                <br>
+                            </div>
+                            <div id="toolkit">
+                                <p class="subtitle">
+                                    <strong>The Toolkit to help color-blindness people</strong>
+                                </p>
+                                <p>
+                                    <strong>Tips:</strong><br>
+                                    Make sure that colors are not the only method of conveying important information.
+                                </p>
+                                <br>
+                            </div>
+                            <div id="design">
+                                <p class="subtitle">
+                                    <strong>Designing for Color-blindness</strong>
+                                </p>
+                                <p>
+                                    There is no need to get rid of colour when designing web content. It is not
+                                    necessary to convert all images to black and white or get rid of images altogether.
+                                    In fact, it may not be necessary to make any changes at all. Most of the time,
+                                    colour is irrelevant to understanding what’s on the Web. However, when colours are
+                                    used to convey or differentiate information (such as pie charts or bar charts, or
+                                    the use of green and red text to indicate pass/fail or good/bad, etc.), this
+                                    information should be provided in other ways as well (WebAIM, 2020).
+                                </p>
+                                <br>
+                                <p>
+                                    For example, the diagram below shows a portion of New York City’s public
+                                    transportation system in which routes are distinguished by the colour of the lines.
+                                </p>
+                                <br>
+                                <img src="images/color_map.jpg" alt="color_map">
+                                <p> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; Figure 1. New York City’s public transportation
+                                    system with the colour of the lines(WebAIM, 2020)
+                                </p>
+                                <br>
+                                <p>
+                                    It is difficult to distinguish routes after removing color information,
+                                </p>
+                                <br>
+                                <img src="images/color_blindness_map.jpg" alt="color_blindness_map">
+                                <p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; Figure 2. New York City’s public transportation
+                                    system without the colour of the lines (WebAIM, 2020)</p>
+                                <br>
+                                <p>
+                                    While the use of colour can enhance the user experience, when colours may not be
+                                    perceived (including by blind users), are overridden by custom settings, or cannot
+                                    be easily distinguished, a different style is needed to convey this information
+                                    through annotated images. Each line, or on a web page, supplement the image with
+                                    text that conveys the same information (WebAIM, 2020).
+                                </p>
+                                <br>
+                            </div>
+                            <div id="blindness">
+                                <h1 class="title">
+                                    Blindness
+                                </h1>
+                                <p>
+                                    People who are blind use the Web. <br>
+                                    <br>
+                                    While most blind people do have some degree of vision, any vision they do have is
+                                    usually not enough to view Web content. This means that computer monitors and mice
+                                    (which are visual inputs) are much less useful to blind people.
+
+                                </p>
+                                <br>
+                                <p class="subtitle">
+                                    <strong>The Toolkit to Help Blindness People</strong>
+                                </p>
+                                <p>
+                                    <strong>Screen readers:</strong><br>
+                                    Blind people are able to listen to Web content. A number of software programs called screen readers have been developed that convert text and other information from Web pages into synthesized speech. Such as Screen readers that 'Software that reads text on the screen with a synthetic voice and Refreshable braille displays that A device that dynamically displays lines of text on the screen in braille (Brewer, 1999). In addition to simply reading the screen, screen readers allow users to view Web content in a variety of ways.
+                                </p>
+                                <br>
+                                <p>
+                                    Common screen readers include
+                                    <strong> <a href="https://webaim.org/articles/jaws/" target="blank">JAWS</a></strong>,
+                                    <strong> <a href="https://webaim.org/articles/nvda/" target="blank">NVDA</a></strong>, and
+                                    <strong> <a href="https://webaim.org/articles/voiceover/" target="blank">JAWS </a></strong>(WebAIM, 2020).
+
+                                </p>
+                                <br>
+                                <p>
+                                    Screen readers can also be used by those who are both deaf and blind using a
+                                    refreshable Braille device that converts the text into Braille rather than speech.
+                                </p>
+                                <img src="images/reader.jpg" alt="reader">
+                                <p> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; Figure 3. The Screen reader (WebAIM, 2020)</p>
+                                <br>
+                                <p>
+                                    Devices such as this have small pins that can be raised or lowered to form Braille
+                                    characters which the deaf-blind individual can feel.
+                                </p>
+                                <br>
+                                <p>
+                                    Deaf and blind people can also use refreshable Braille devices to convert screen readers to Braille instead of speech. The small pins of such devices can be raised or lowered to create Braille characters that can be perceived by deaf-blind people. Although screen readers cannot always completely replace the visual experience, when accessibility is considered, they can provide screen reader users with a high degree of access to most Web content. Screen readers cannot analyse images to extract meaning. In order to understand what an image's <strong><a href="https://webaim.org/techniques/alttext/" target="blank">alternative text</a> </strong> conveys, it must be provided with content. Similarly, a sighted user could scan a web page and quickly determine how the page is organized and make visual correlations or distinctions between content based on layout, proximity, or visual design. Screen readers cannot perform this operation. However, pages that are properly structured and contain appropriate code associations can greatly enhance the ability of screen reader users to have the same experience (©WebAIM, 2020).
+                                </p>
+                            </div>
+                        </div>
+                        <br>
+                        <p class="subtitle">
+                            <a href="about.html#Reference">
+                                <span class="tag is-dark">Reference</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                Group E &copy;2020
+                <br>
+                All rights reserved.
+                <br>
+                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

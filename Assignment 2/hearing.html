@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]> <html class="oldie" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toolkit for Web Accessibility</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="navbar is-white" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+            <i class="fab fa-accessible-icon"> Toolkit for Web Accessibility</i>
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasic" class="navbar-menu">
+        <div class="navbar-start">
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="introduction.html">
+                    Introduction
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                    <a class="navbar-item" href="introduction.html#Compliance">
+                        Accessibility Compliance
+                    </a>
+                    <a class="navbar-item" href="introduction.html#Advice">
+                        Implementation Advice
+                    </a>
+                    <a class="navbar-item" href="introduction.html#Evaluation">
+                        General Evaluation Tools
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="introduction.html">
+                    Main Content
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                    <a class="navbar-item" href="vision.html">
+                        Visual impairments
+                    </a>
+
+                    <a class="navbar-item" href="understandable.html">
+                        Cognitive Limitations
+                    </a>
+
+                    <a class="navbar-item" href="hearing.html">
+                        Auditory impairments
+                    </a>
+
+                    <a class="navbar-item" href="mobility.html">
+                        Motor Limitations
+                    </a>
+                </div>
+            </div>
+
+            <a class="navbar-item" href="about.html">
+                About
+            </a>
+
+        </div>
+    </div>
+
+    <div class="navbar-end">
+        <div class="navbar-item">
+            <div class="buttons">
+                <a class="button is-primary">
+                    <strong>Contact us</strong>
+                </a>
+                <a class="fas fa-adjust">
+                    Contrast
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <div class="tile is-ancestor">
+            <div class="tile is-7 is-vertical is-parent">
+                <div class="tile is-child box">
+                    <p class="title">Deafness</p>
+                    <p>Hearing disability is divided into two categories: “deafness” and “hard of hearing”.</p>
+                    <br>
+                    <p><strong>Deafness</strong> involves “a substantial uncorrectable impairment of hearing in both ears”. “Some deaf individuals' first language is a sign language, and they may or may not be fluent readers of a written language.
+                        <br>
+                        To use the Web, people who are deaf may rely on captions for audio content.” (Brewer, 1999)
+                    </p>
+                    <br>
+                    <p>Barriers that deaf people may encounter online include: </p>
+                    <br>
+                    <div class="box">
+                        <div class="media">
+                            <ol>
+                                <li>
+                                    Audio content on the web lacks titles or subtitles. (Brewer, 1999)
+                                </li>
+                                <br>
+                                <li>
+                                    The lack of visual signposts in text-filled pages may reduce the comprehension of written language for non-native readers. (Brewer, 1999)
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <p class="subtitle">
+                        <a href="about.html#Reference">
+                            <span class="tag is-dark">Reference</span>
+                        </a>
+                    </p>
+                </div>
+                <div class="tile is-child box">
+                    <p class="title">Hard of hearing</p>
+                    <p>“A person with a mild to moderate hearing impairment may be considered hard of hearing.” (Brewer, 1999)</p>
+                    <br>
+                    <p>
+                        People with impaired hearing may rely on subtitles and audio amplification of audio content when using the Internet. The obstacles encountered on the Internet include:
+                    </p>
+                    <br>
+                    <p>“lack of captions or transcripts for audio content.” (Brewer, 1999)</p>
+                    <br>
+                    <p>According to data collected by the World Federation of the Deaf (WFD), about 80% of the deaf people in the world have insufficient education and/or literacy skills, low language skills and chaotic living conditions. (Debevc, 2009)</p>
+                    <br>
+                    <p>
+                        People with impaired hearing or deaf disorder will counter a series of troubles when they surf the Internet. In most cases, people with deaf have difficulties when they read text element, as the text is designed based on oral language
+                        . Oral languages are strange to the deaf as their first language is sign language (Jensen, 2016). Hence, it is necessary for us to develop tools to solve their problems on the Internet.
+                    </p>
+                    <br>
+                    <p>In Center for Deaf blindness and Hearing Loss in Aalborg, Denmark, they conducted requisitions of deaf subjects and made the observation. The center has drawn following conclusions: </p>
+                    <br>
+                    <div class="box">
+                        <div class="media">
+                            <ol>
+                                <li>Deaf people navigate websites based on text, pictures and visual indicators. (Jensen, 2016)</li>
+                                <br>
+                                <li>When deaf people browse a website, they will want to see any pictures they can see, if the website provides such pictures. They will look at pictures more than text. (Jensen, 2016)</li>
+                                <br>
+                                <li>Deaf people can misunderstand some online content, especially when the text and pictures on the website do not match. (Jensen, 2016)</li>
+                                <br>
+                                <li>Deaf people have a lower level of reading because the text is based on spoken language. Spoken language is unfamiliar to deaf people because their first language is sign language. Sign language is a nonverbal language, which is based on the gestures of the body, face and mainly hands. (Jensen, 2016)</li>
+                                <br>
+                                <li>They get bored very quickly when they read the text, except to simplify the text. (Jensen, 2016)</li>
+                                <br>
+                                <li>Text is the biggest problem for deaf test subjects. (Jensen, 2016)</li>
+                                <br>
+                                <li>Highlighting these words and displaying their synonyms or antonyms or translating difficult words into sign language are two ideas that can be realized or simulated. (Jensen, 2016)</li>
+                                <br>
+                                <li>This test shows that deaf people who use sign language prototypes complete a given task much faster than deaf people who only use a website without a dictionary. (Jensen, 2016)</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <p class="subtitle">
+                        <a href="about.html#Reference">
+                            <span class="tag is-dark">Reference</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="tile is-parent">
+                <div class="tile is-child box">
+                    <p class="title">Useful toolkits</p>
+                    <br>
+                    <p class="subtitle">
+                        1. Sign Language Interpreter Module:
+                    </p>
+                    <p>
+                        Debevc (2009) introduces a Sign Language Interpreter Module (SLIM), and this module can offer so sign language video to users.
+                    </p>
+                    <br>
+                    <p>
+                        The function of this tool is 'provides the translation of a specific word, text, image, photo, animation and any other video on the Web.' (Debevc, 2009)
+                    </p>
+                    <img src="images/slim.jpg" alt="The effect of the SLIM module (Debevc, 2009)">
+                    <div class="block">
+                        In general, this tool can translate the content on the website into a video with sign language, and the video can be watched repeatedly
+                        . If users find that the video contains errors, or want to provide suggestions and feedback to the developer, this tool can also implement a feedback submission function. (Debevc, 2009)
+                    </div>
+                    <div class="block">
+                        Through this tool, deaf people can more easily access the content on the web page, which can increase the user's interest in the content, thereby learning more knowledge and improving their ability to earn a living. (Debevc, 2009)
+                    </div>
+                    <p class="subtitle">
+                        2. Sign language dictionary embedded in browsers:
+                    </p>
+                    <p>
+                        Center for Deaf blindness and Hearing Loss in Aalborg, Denmark has developed a prototype of a website, which has embedded sign language dictionary and it can translate keywords to sign language. (Jensen, 2016)
+                    </p>
+                    <br>
+                    <img src="images/signLanguage.jpg" alt="Screenshot of the sign language solution, where the hyperlinks activated the animations/translations of the difficult words (Jensen, 2016)">
+                    <br>
+                    <p class="subtitle">
+                        <a href="about.html#Reference">
+                            <span class="tag is-dark">Reference</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            Group E &copy;2020
+            <br>
+            All rights reserved.
+            <br>
+            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+        </p>
+    </div>
+</footer>
+</body>
+</html>

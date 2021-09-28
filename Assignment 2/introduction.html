@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]> <html class="oldie" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toolkit for Web Accessibility</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="navbar is-light" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+            <i class="fab fa-accessible-icon"> Toolkit for Web Accessibility</i>
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasic" class="navbar-menu">
+        <div class="navbar-start">
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="introduction.html">
+                    Introduction
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                    <a class="navbar-item" href="introduction.html#Compliance">
+                        Accessibility Compliance
+                    </a>
+                    <a class="navbar-item" href="introduction.html#Advice">
+                        Implementation Advice
+                    </a>
+                    <a class="navbar-item" href="introduction.html#Evaluation">
+                        General Evaluation Tools
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="introduction.html">
+                    Main Content
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                    <a class="navbar-item" href="vision.html">
+                        Visual impairments
+                    </a>
+
+                    <a class="navbar-item" href="understandable.html">
+                        Cognitive Limitations
+                    </a>
+
+                    <a class="navbar-item" href="hearing.html">
+                        Auditory impairments
+                    </a>
+
+                    <a class="navbar-item" href="mobility.html">
+                        Motor Limitations
+                    </a>
+                </div>
+            </div>
+
+            <a class="navbar-item" href="about.html">
+                About
+            </a>
+
+        </div>
+    </div>
+
+    <div class="navbar-end">
+        <div class="navbar-item">
+            <div class="buttons">
+                <a class="button is-primary">
+                    <strong>Contact us</strong>
+                </a>
+                <a class="fas fa-adjust">
+                    Contrast
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</nav>
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="box">
+            <div id="Compliance">
+            <article class="media">
+                <div class="media-content">
+                    <div class="content">
+                        <p class="subtitle"><strong>Accessibility Compliance</strong></p>
+                        <br>
+                        <p>
+                            One of the main accessibility compliance is <a href="https://www.w3.org/TR/WCAG21/"><strong>Web Content Accessibility Guidelines (WCAG) 2.1</strong></a>. There are also other compliances like <strong>Section 508</strong>, which is a federal law in America, and another one <strong>The American with Disabilities Acts (ADA)</strong>. You can refer to <a href="https://www.logicsolutions.com/508-ada-wcag-accessibility-difference/"><strong>508, ADA, WCAG: What's the difference?</strong></a> to know the difference between them.
+                        </p>
+                        <br>
+                        <p>
+                            Moreover, there are other <strong>informal guidelines</strong>, like <a href="https://webaim.org/resources/designers/">WebAIM - Web Accessibility for Designers</a>, <a href="https://accessibility.arl.org/standards-best-practices/#technical-standards">Standards & Best Practices - Technical Standards</a>, <a href="http://www.inthelibrarywiththeleadpipe.org/2016/accessibility/">Inclusivity, Gestalt Principles, and Plain Language in Document Design</a> and <a href="https://webaccess.berkeley.edu/resources/tips">Tips and How Tos | Web Access</a>.
+                        </p>
+                        <br>
+                        <p>
+                            All those restrictions and guidelines are boring and not easy to obey, so we might need other methods to realise web accessibility and get more experience. So the following is some useful advice to improve the accessibility of your website.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <br>
+            </div>
+            <p class="subtitle">
+                <a href="about.html#Reference">
+                    <span class="tag is-dark">Reference</span>
+                </a>
+            </p>
+        </div>
+
+        <div class="box">
+            <div id="Advice">
+            <article class="media">
+                <div class="media-content">
+                    <div class="content">
+                        <p class="subtitle"><strong>Implementation Advice</strong></p>
+                        <br>
+                        <p>
+                            Firstly, <strong>using a formal code</strong> is the foundation of website accessibility. For instance, screen readers might follow a document tree to describe the website, so it should be well organized. According to Laura Kalbag (2017), the implementation advice is divided into four aspects: visual impairments, auditory impairments, Motor Limitations and Cognitive Limitations and Mental Disorders.
+                        </p>
+                        <br>
+                        <a href="vision.html">
+                            <p><strong>For Visual Impairments</strong></p>
+                        </a>
+                        <p>
+                            Following are three different aspects of visual impairments, and we give methods respectively.
+                        </p>
+                        <ol>
+                            <li>
+                                Colour Blindness
+                                <br>
+                                The colour of the website should be carefully chosen, which is important for <strong>colour blind people</strong> to distinguish the content of the website.
+                                <br>
+                                <a href="https://www.checkmycolours.com/">CheckMyColours</a> is recommended because it could give feedback in real-time by inputting URLs. There are also other tools like <a href="https://developer.paciellogroup.com/resources/contrastanalyser/">Colour Contrast Analyser</a> and <a href="https://colororacle.org/">Color Oracle</a> which need to be downloaded; and other two tools <a href="https://snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=333333">Colour Contrast Check</a> and <a href="https://juicystudio.com/services/luminositycontrastratio.php">Luminosity Colour Contrast Ratio Analyser</a>, which could only be used by colour code.
+                            </li>
+                            <br>
+                            <li>
+                                Weak Eyesight
+                                <br>
+                                <strong>Weak eyesight</strong> people usually look forward to <strong>font-size adjust function</strong>, which could be realized by CSS. You can refer to <a href="https://webaim.org/articles/visual/">Visual Disabilities - Introduction</a>.
+                                <br>
+                                <br>
+                                Moreover, Helvetica, Courier, Arial, Verdana and CMU are visual impairments <strong>friendly font-style</strong>, which means they could lower the burden of readers, as well as dyslexia people. On the opposite, italic is not. (Rello and Baeza-Yates, 2013)
+                            </li>
+                            <br>
+                            <li>
+                                Blindness and Eyesight Loss
+                                <br>
+                                For people who lose the most of eyesight will need <strong>voice verification code</strong>.
+                                <br>
+                                <br>
+                                On the other side, there have been many <strong>screen readers</strong> in the market, including JAWS Screen Reader, Open Book, <a href="https://www.adobe.com/accessibility/products/reader.html">Adobe Reader Accessibility</a>, ZoomText, Kurzweil, Apple Voiceover and WebAnywhere. So, the code must be written following the guideline of W3C. For example, add alt to every picture on your website, as they are meaningless for people who can not see it.
+                                <br>
+                                <br>
+                                <a href="https://webaim.org/articles/voiceover/">Using VoiceOver to Evaluate Web Accessibility</a> gives a guideline about how to use voiceover(a free system embedded screen reader on Apple’s devices) to test the accessibility of your website.
+                                <br>
+                                <br>
+                                Likewise, some people prefer to use a <strong>keyboard</strong>, you can refer to <a href="https://webaccess.berkeley.edu/resources/tips-and-how-tos/how-do-keyboard-testing">How to do keyboard testing | Web Access</a> to improve keyboard accessibility.
+                            </li>
+                        </ol>
+                        <br>
+                        <a href="hearing.html">
+                            <p><strong>For Auditory Impairments</strong></p>
+                        </a>
+                        <p>
+                            There are two aspects of auditory impairments deserve to be considered.
+                        </p>
+                        <p>
+                            Firstly, If you have <strong>audios or videos</strong> on your website, you might consider adding plug software to add descriptions or subtitles for them. This will make videos more friendly for those who have hearing limitations. Following are two links that give rich resources related to captions: <a href="https://webaim.org/articles/auditory/">Auditory Disabilities - Introduction</a>,  <a href="https://accessibility.arl.org/external-resources/captioning-resources/">Captioning Resources</a>. Besides, <a href="https://webaccess.berkeley.edu/resources/tips/captioning">How to Caption Videos</a> and <a href="https://webaccess.berkeley.edu/resources/tips/audio-description">About Audio Description</a> gives various methods about how to add captions and descriptions.
+                        </p>
+                        <p>
+                            Then, for some people, <strong>gesture language</strong> is their first language, there could be a gesture dictionary for them to check.
+                        </p>
+                        <br>
+                        <a href="mobility.html">
+                            <p><strong>For Motor Limitations</strong></p>
+                        </a>
+                        <p>
+                            In terms of <strong>motor limitations</strong>, there are different attitudes of motor limitation. Some lead to a tremble when using keyboards, touch screens and mice, others might lead to a function loss of muscle so that alternatives like <strong>eye trackers</strong> or <strong>speech-recognition software</strong> are used to be a supplement.
+                        </p>
+                        <p>
+                            At <a href="https://webaim.org/articles/motor/assistive">this website</a>, you can find the introduction of different assistive technologies for motor limitations and we suggest developers check the functionality of those functions on their websites.
+                        </p>
+                        <br>
+                        <a href="understandable.html">
+                            <p><strong>For Cognitive Limitations and Mental Disorders</strong></p>
+                        </a>
+                        <p>
+                            Many people with cognitive limitations struggle with understanding ability issues. You should consider to remove the <strong>formal nouns</strong> of your website or add an explanation. <a href="https://www.webfx.com/tools/read-able/check.php?tab=Test+By+Url&uri=https%3A%2F%2Fyr28.host.cs.st-andrews.ac.uk%2Findex.html">Readability Test Tool</a> is a web where you can test the suitable age of your users. If you want it to suit all different ages, you might expect the result to be as low as possible.
+                        </p>
+                        <p>
+                            Moreover, you may need to remove <strong>pictures</strong> which might stimulate people with mental disorders, if there is a higher possibility that they will visit this website, like government or official websites.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <br>
+            </div>
+            <p class="subtitle">
+                <a href="about.html#Reference">
+                    <span class="tag is-dark">Reference</span>
+                </a>
+            </p>
+        </div>
+
+        <div class="box">
+            <div id="Evaluation">
+            <article class="media">
+                <div class="media-content">
+                    <div class="content">
+                        <p class="subtitle"><strong>General Evaluation Tools</strong></p>
+                        <br>
+                        <p>
+                            <strong>Evaluation tools</strong> are used to check the accessibility of websites. It could be divided into two types, <strong>subjective assessments</strong> and <strong>conformance testing</strong>. (Zhang, 2018, p.11)
+                        </p>
+                        <br>
+                        <p>
+                            For the first one, one of the common methods is to do <strong>questionnaire surveys</strong> to website users. The best way to know the thoughts of the users should be testing with <strong>real people</strong>. In terms of the last one, it includes a <strong>checklist</strong> and <strong>composite testing tools</strong>.
+                        </p>
+                        <br>
+                        <p>
+                            In this section, we mainly focus on the analysis of <strong>conformance testing methods</strong>.
+                        </p>
+                        <ol>
+                            <li>
+                                <a href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.1&currentsidebar=%23col_overview&levels=aaa">Official W3C Checklist</a> is a set of systematic merits. Its attributes are that it divided all content into “POUR”, four parts, which is an abbreviation of “perceivable, operable, understandable and robust”. In terms of every sub-merit, it gives them different levels from A to AAA, which refers to low website accessibility to high website accessibility. Its advantage is formal and wide-covered, in turn, it means it's hard to use because it would take a long time to check all the restrictions one by one. <a href="https://webaim.org/standards/wcag/checklist">WebAIM's WCAG 2 Checklist</a> is another checklist website but same as the W3C version except with a different appearance.
+                            </li>
+                            <br>
+                            <li>
+                                There is also a simplified version of the above checklist: <a href="https://www.w3.org/WAI/test-evaluate/preliminary/">Easy Checks – A First Review of Web Accessibility</a>.
+                            </li>
+                            <br>
+                            <li>
+                                An important foundation of website accessibility is the <strong>correctness of codes</strong>, which could also be checked by W3C at <a href="https://validator.w3.org/#validate_by_uri+with_options">W3C Markup Validation Service, W3C CSS Validation Service</a> or <a href="https://validator.w3.org/checklink">W3C Link Checker</a>. Because the attributes like headers and labels will affect the navigation ability of users, especially people who use screen readers and people with intellectual or motor limitations.
+                            </li>
+                            <br>
+                            <li>
+                                You might also want to know <strong>ARIA</strong>, which is a supplement of HTML used to improve website accessibility. You can find the rules of the newest ARIA at <a href="https://www.w3.org/TR/html-aria/">W3C website</a>. <a href="https://webaim.org/techniques/aria/">WebAIM</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">MDN web docs</a> also illustrate good examples of ARIA.
+                            </li>
+                            <br>
+                            <li>
+                                <a href="https://wave.webaim.org/">WAVE Web Accessibility Evaluation Tool</a>, <a href="https://tenon.io/">Tenon.io | Home page</a>,  <a href="https://siteimprove.com/en-gb/accessibility-website-checker/">Siteimprove Accessibility Checker</a>, <a href="https://fae.disability.illinois.edu/anonymous/?Anonymous%20Report=/">Run FAE: Functional Accessibility Evaluator 2.1</a> and <a href="https://www.accessify.com/">Accessify.com</a> are <strong>compositive testing tools</strong>. They could give detailed information by uploading an URL or raw codes. But Siteimprove and Run FAE are not as effective as the first two, because I prefer others which give results in real-time. In terms of Accessify.com, it could not run a test on my website so not recommended.
+                            </li>
+                            <br>
+                            <li>
+                                There are several <strong>Chrome extensions</strong> like <a href="https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh/related">WAVE Evaluation Tool</a>, <a href="https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd">axe - Web Accessibility Testing</a>, and <a href="https://chrome.google.com/webstore/detail/tenon-check/bmibjbhkgepmnehjfhjaalkikngikhgj/related">Tenon Check</a>. By comparison, I recommend WAVE Evaluation Tool, because it does not need to register compared with the axe, and Tenon’s extension is not accessible. Moreover, there is also one for <strong>Safari</strong>, <a href="https://apps.apple.com/app/id1364813335">11yTools - Web Accessibility</a>, and another for <strong>IE and Opera</strong>, <a href="https://developer.paciellogroup.com/resources/wat/">WAT</a>, you need download to use WAT.
+                            </li>
+                            <br>
+                            <li>
+                                On the other side, you should also take care of the accessibility of <strong>files</strong> on the website. <a href="https://www.robobraille.org/web3/ucb/">Alternate media made easy - Request</a> is a website that allows you to transfer files into other formats. <a href="https://support.microsoft.com/en-us/office/improve-accessibility-with-the-accessibility-checker-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f?ui=en-us&rs=en-us&ad=us">Improve accessibility with the Accessibility Checker - Office Support</a> is a function that is easy to use if you work on  Microsoft series products, including office, PowerPoint etc. <a href="https://webaccess.berkeley.edu/resources/tips/word-documents">How to Create Accessible Word Documents | Web Access</a>, <a href="https://webaccess.berkeley.edu/resources/tips/pdfs">How to Create Accessible PDF Documents | Web Access</a> and <a href="https://www.ucop.edu/electronic-accessibility/web-developers/tools-and-testing/guidelines-accessible-surveys-forms.html">Guidelines for accessible surveys and forms | UCOP</a> also provide very useful ideas.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+            <br>
+            </div>
+            <p class="subtitle">
+                <a href="about.html#Reference">
+                    <span class="tag is-dark">Reference</span>
+                </a>
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            Group E &copy;2020
+            <br>
+            All rights reserved.
+            <br>
+            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+        </p>
+    </div>
+</footer>
+</body>
+</html>

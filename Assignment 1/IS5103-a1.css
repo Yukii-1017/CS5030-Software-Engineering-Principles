@@ -1,0 +1,235 @@
+/* part one: font style and background image */
+@media screen and (max-width:1000px){
+    *{
+        font-size: medium;
+    }
+
+    .search {
+        font-size: medium;
+    }
+
+    .search input{
+        font: smaller;
+    }
+
+    .setting select{
+        font-size: medium;
+    }
+
+    .nav button{
+        font-size: medium;
+    }
+
+    article p:first-of-type:first-letter {
+        font-size: large;
+    }
+
+    .intro {
+        font-size: medium;
+    }
+
+    .forColumn h2{
+        font-size: large;
+    }
+
+    .forColumn h3{
+        font-size:  medium;
+    }
+
+
+}
+
+
+
+    /* This font was downloaded at: https://www.fontspring.com/search?q=acherusgrotesque-regular (accessed: 2020.10.28) */
+@font-face {
+    font-family: 'acherusgrotesque-regular';
+    src: url('acherusgrotesque-regular-webfont.woff2') format('woff2'),
+         url('acherusgrotesque-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    /* This pattern is downloaded from www.toptal.com/designers/subtlepatterns/  (accessed: 2020.10.26)*/
+    background-image: url(./images/./background.png);
+}
+
+/* part two: top, logo and introduction */
+.top{
+    margin-top: 3%;
+}
+
+.search{
+    display:inline-block;
+    width:25%;
+    height: auto;
+    transform: translateX(180%);
+    font-size: large;
+}
+
+.search input{
+    font-size: large;
+    border-width:0.1rem;
+} 
+
+.setting {
+    display:inline-block;
+    width: 25%;
+    height: auto;
+    transform: translateX(180%);
+    font-size: large;
+}
+
+.setting select{
+    font-size: large;
+    border-width: 0.1rem;
+}
+
+.setting a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5%;
+}
+
+.setting a:hover {
+    background-color: #e2d1c3;
+    border-radius: 60px;
+}
+
+.header {
+    overflow: hidden;
+}
+
+.logo { float: left; }
+
+.logo img {
+    width: 75%;
+    margin-left: 28%;
+}
+
+.intro {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    float: right;
+    width:35%;
+    margin-right: 10%;
+    margin-top: 2%;
+    text-align: right;
+    background-color: #e2d1c3;
+    border-bottom-left-radius: 30%;
+    padding: 1.5%;
+    font-size: larger;
+    overflow: hidden;
+}
+
+
+/* part three: left nav */
+.nav {
+    display: inline-block;
+    background-color: #e2d1c3;
+    width: 17%;
+    margin-top: 3%;
+    margin-left: 10%;
+    padding:2% 0%;
+    border-top-right-radius: 40%;
+    overflow: hidden;
+}
+
+.nav button {
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    padding-bottom: 5%;
+    font-size: larger;
+}
+
+.nav button:hover{
+    background-color: white;
+}
+
+.nav button:focus{
+    outline: none;
+    background-color: white;
+}
+
+.nav img{
+    width: 15%;
+    margin-left: 5%;
+    transform: translateY(30%);
+}
+
+hr {
+    border:white dashed 1px;
+    width: 90%;
+}
+
+
+/* part four: articles */
+.article {
+    background-color: white;
+    padding: 2%;
+    width: 57%;
+    float: right;
+    margin-top: 3%;
+    margin-right: 10%;
+    font-size: larger;
+}
+
+.article h2{
+    text-align: center;
+}
+
+.article p {
+    text-indent: 1em;
+}
+
+    /* This sementic is learned from exercise of week three, from the text-properties.css of alice.zip. */
+article p:first-of-type:first-letter {
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.firstLetter{
+    text-indent: -0.1em !important;
+}
+
+.forColumn{
+    column-count: 2;
+    column-rule: dotted 0.1em;
+}
+
+.forColumn h2{
+    column-span: all;
+}
+
+.forColumn h3{
+    font-size: larger;
+}
+
+#reference{
+    text-indent: -0.1em !important;
+}
+
+/* part five: footer */
+footer {
+    text-align: center;
+    font-size: smaller;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+footer div{
+    display: inline-block;
+}
+
+footer p {
+    display:inline-block;
+    transform: translateY(30%);
+}
+

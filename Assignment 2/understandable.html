@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]> <html class="oldie" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toolkit for Web Accessibility</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="navbar is-white" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+            <i class="fab fa-accessible-icon"> Toolkit for Web Accessibility</i>
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasic" class="navbar-menu">
+        <div class="navbar-start">
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="introduction.html">
+                    Introduction
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                    <a class="navbar-item" href="introduction.html#Compliance">
+                        Accessibility Compliance
+                    </a>
+                    <a class="navbar-item" href="introduction.html#Advice">
+                        Implementation Advice
+                    </a>
+                    <a class="navbar-item" href="introduction.html#Evaluation">
+                        General Evaluation Tools
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" href="introduction.html">
+                    Main Content
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                    <a class="navbar-item" href="vision.html">
+                        Visual impairments
+                    </a>
+
+                    <a class="navbar-item" href="understandable.html">
+                        Cognitive Limitations
+                    </a>
+
+                    <a class="navbar-item" href="hearing.html">
+                        Auditory impairments
+                    </a>
+
+                    <a class="navbar-item" href="mobility.html">
+                        Motor Limitations
+                    </a>
+                </div>
+            </div>
+
+            <a class="navbar-item" href="about.html">
+                About
+            </a>
+
+        </div>
+    </div>
+
+    <div class="navbar-end">
+        <div class="navbar-item">
+            <div class="buttons">
+                <a class="button is-primary">
+                    <strong>Contact us</strong>
+                </a>
+                <a class="fas fa-adjust">
+                    Contrast
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</nav>
+
+<section class="section">
+
+    <div class="container">
+        <div class="tile">
+            <div class="tile is-vertical is-parent is-12">
+                <div class="box">
+                    <div class="container">
+                        <h1 class="title">
+                            Cognitive Limitations
+                        </h1>
+                        <br>
+                        <p class="subtitle">
+                            <strong>Introduction</strong>
+                        </p>
+                        <p>
+                            Most cognitive deficits have biological or physiological roots. The link between biology and psychological processes is most obvious in cases of traumatic brain injury and genetic disorders, but more subtle cognitive disorders also stem from brain structures or chemical reactions. People with severe cognitive impairment need help in almost every aspect of their daily lives. However, people with mild learning disabilities may be able to function fully, even to the extent that the disability is never diagnosed (©WebAIM, 2020).
+                        </p>
+                        <br>
+                        <p class="subtitle">
+                            <strong>Functional Classifications</strong>
+                        </p>
+                        <p>
+                            Functional categories focus on the user's abilities and challenges, regardless of medical or behavioral reasons. Multiple functional impairments can stem from a clinical diagnosis: people with memory loss may also have difficulty concentrating or solving problems ("Web Content Accessibility Guidelines (WCAG) 2.1", 2020 ).
+                        </p>
+                        <br>
+                        <p>
+                            Functional categories of cognitive disabilities mainly include difficulties with:
+                        </p>
+                        <div class="box">
+                            <ol>
+                                <li>Memory</li>
+                                <li>Problem-solving</li>
+                                <li>Attention</li>
+                            </ol>
+                        </div>
+                        <p>
+                            Functional categories are useful in Web accessibility because they align with the concerns of Web designers and developers. Telling a developer that certain people have autism only makes sense if the developer knows what obstacles autistic people may face with Web content. On the other hand, telling developers that certain people have difficulty understanding math provides a meaningful environment for developers. Developers just need to understand and consider the range of abilities of their users (©WebAIM, 2020).
+                        </p>
+                        <br>
+                        <p class="subtitle">
+                            <strong>The Toolkit to Help Cognitive Disability People</strong>
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>Accommodating Memory Deficits:</strong><br>
+                                Reminders of the overall website context can help those with memory deficiencies. Long or complex processes (such as online browsing/searching and buying products) should be kept as simple and short as possible. To focus users' attention on specific tasks, break interactions into separate pages with progress indicators such as "Step 2 of 4" to help them keep track of what they've done and what's left to do. Links should say not only "Previous" and "Next", but also "Return to payment and shipping information" and "Next: Review order"("Web Content Accessibility Guidelines (WCAG) 2.1", 2020).
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Accommodating Problem-Solving Deficits:</strong><br>
+                                Anyone can click on the wrong link, misspell a word or leave a required form field blank. In some people, this trend is exaggerated. The error message should explain what is incorrect and show how to fix the problem. If the original spelling is suspicious or no results are returned, the search function should suggest alternative spellings to the user. The user should be warned to take significant action, such as deleting a file or making an irreversible financial transaction. Instructions at the beginning of the task help prevent user error. 
+                                <br>
+                                <br>
+                                Avoid accidental changes in the context of the site. Functionality should be as predictable as possible, with warnings or interpreter bias. Authentication processes that require the completion of cognitive function tests (e.g., completing a CAPTCHA puzzle) should include another authentication method, such as two-factor authentication (©WebAIM, 2020).
+                            </li>
+                            <br>
+                            <li>
+                                <strong>Accommodating Attention Deficits:</strong><br>
+                                Help users focus their attention. Use visual cues to highlight key points or sections of displayed content. If possible, eliminate animations, ads, and sponsored links. Use headlines to draw attention to the focus and outline of the content. Avoid distracting background noise or images. Instead, use them to draw the user's attention to the content (©WebAIM, 2020).
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    <p class="subtitle">
+                        <a href="about.html#Reference">
+                            <span class="tag is-dark">Reference</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            Group E &copy;2020
+            <br>
+            All rights reserved.
+            <br>
+            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+        </p>
+    </div>
+</footer>
+</body>
+</html>

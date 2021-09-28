@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]> <html class="oldie" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toolkit for Web Accessibility</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="navbar is-white" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="index.html">
+      <i class="fab fa-accessible-icon">Toolkit for Web Accessibility</i>
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasic" class="navbar-menu">
+    <div class="navbar-start">
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="introduction.html">
+          Introduction
+        </a>
+        <div class="navbar-dropdown is-boxed">
+          <a class="navbar-item" href="introduction.html#Compliance">
+            Accessibility Compliance
+          </a>
+          <a class="navbar-item" href="introduction.html#Advice">
+            Implementation Advice
+          </a>
+          <a class="navbar-item" href="introduction.html#Evaluation">
+            General Evaluation Tools
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="introduction.html">
+          Main Content
+        </a>
+        <div class="navbar-dropdown is-boxed">
+          <a class="navbar-item" href="vision.html">
+            Visual impairments
+          </a>
+
+          <a class="navbar-item" href="understandable.html">
+            Cognitive Limitations
+          </a>
+
+          <a class="navbar-item" href="hearing.html">
+            Auditory impairments
+          </a>
+
+          <a class="navbar-item" href="mobility.html">
+            Motor Limitations
+          </a>
+        </div>
+      </div>
+
+      <a class="navbar-item" href="about.html">
+        About
+      </a>
+
+    </div>
+  </div>
+
+  <div class="navbar-end">
+    <div class="navbar-item">
+      <div class="buttons">
+        <a class="button is-primary">
+          <strong>Contact us</strong>
+        </a>
+        <a class="fas fa-adjust">
+          Contrast
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+</nav>
+
+<section class="section">
+
+  <div class="container">
+    <div class="tile is-ancestor">
+
+      <div class="tile is-3">
+        <aside class="menu">
+          <p class="menu-label">
+            Motor Limitations
+          </p>
+          <ul class="menu-list">
+            <li><a href="#Apple">Tools from Apple</a></li>
+            <li><a href="#Adobe">Tools from Adobe</a></li>
+            <li><a href="#Microsoft">Tools from Microsoft</a></li>
+            <li><a href="#W3C">Guidelines from the World Wide Web Consortium(W3C)</a></li>
+            <li><a href="#CPB">Tools from CPB/ WGBH National Center</a></li>
+            <li><a href="#WebABLE">Database from WebABLE</a></li>
+          </ul>
+        </aside>
+      </div>
+
+      <div class="tile">
+        <article class="message">
+          <div class="message-header">
+            <p>Motor Limitations</p>
+          </div>
+          <div class="message-body">
+            <P>Mobility disorder including (Brewer, 1999):</P>
+            <br>
+            <div class="box">
+              <div class="media">
+                <ol>
+                  <li>Weakness.</li>
+                  <br>
+                  <li>Limitations of muscular control (such as involuntary movements, a lack of coordination, or paralysis).</li>
+                  <br>
+                  <li>Limitations of sensation.</li>
+                  <br>
+                  <li>Joint problems.</li>
+                  <br>
+                  <li>Missing limbs.</li>
+                  <br>
+                  <li>May include pain, which further hinders movement.</li>
+                </ol>
+              </div>
+            </div>
+
+            <br>
+            <p>
+              Any of these diseases can affect the hands, arms, and other parts of the body. Those with mobility impairments that affect their hands or arms can use some equipment specifically designed for them: (Brewer, 1999)
+            </p>
+            <br>
+            <div class="box">
+              <div class="media">
+                <ol>
+                  <li>
+                    “A specialized mouse”
+                  </li>
+                  <br>
+                  <li>
+                    “A keyboard with a layout of keys that matches their range of motion”
+                  </li>
+                  <br>
+                  <li>
+                    “Head-mouse, head-pointer, or mouth-stick”
+                  </li>
+                  <br>
+                  <li>
+                    “Voice-recognition software”
+                  </li>
+                  <br>
+                  <li>
+                    “An eye-gaze system”
+                  </li>
+                  <br>
+                  <li>
+                    “Other assistive technologies”
+                  </li>
+                  <br>
+                  <li>
+                    Can use clicking a single button instead of a combination of multiple buttons at the same time (for example, using "R" instead of "CRTL+R").
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <br>
+            <p>
+              Those who have difficulty with hands and arms movement may encounter obstacles when using the web, the obstacles may include: (Brewer, 1999)
+            </p>
+            <br>
+            <div class="box">
+              <div class="media">
+                <ol>
+                  <li>
+                    “browsers and authoring tools that do not support serialized keystrokes for commands”
+                  </li>
+                  <br>
+                  <li>
+                    “forms that cannot be tabbed through in a logical order”
+                  </li>
+                  <br>
+                  <li>
+                    “interactive forms with time-limited response options”
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <p class="subtitle">
+              <a href="about.html#Reference">
+                <span class="tag is-dark">Reference</span>
+              </a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+    <article class="message">
+      <div id="Apple">
+        <div class="message-header">
+          <p>Tools from Apple</p>
+        </div>
+        <div class="message-body">
+          <p>
+            Apple is a hardware and software supplier with expectations. Apple has produced some products designed for people with disabilities to use when browsing websites.
+          </p>
+          <br>
+          <p>
+            For example, Apple’s Macintosh computer includes screen-magnification software, system software to help people with motion disabilities, electronic documentation, text-to-speech synthesis, voice recognition, and visual alert cues.” (Carter, 2001)
+          </p>
+          <br>
+          <p class="subtitle">
+            <a href="about.html#Reference">
+              <span class="tag is-dark">Reference</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <article class="message">
+      <div id="Adobe">
+        <div class="message-header">
+          <p>Tools from Adobe</p>
+        </div>
+        <div class="message-body">
+          <p>
+            Adobe's Acrobat software supports Microsoft Active Accessibility (MSAA) application programming interface (API). Microsoft Active Accessibility is an API, which will offer the information of the content and user interface to assistive technologies. (Carter, 2001)
+          </p>
+          <br>
+          <p class="subtitle">
+            <a href="about.html#Reference">
+              <span class="tag is-dark">Reference</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <article class="message">
+      <div id="Microsoft">
+        <div class="message-header">
+          <p>Tools from Microsoft</p>
+        </div>
+        <div class="message-body">
+          <p>
+            Microsoft has overlapped a part of the operating system, office efficiency, and browser markets. Therefore, Microsoft's accessibility plan may be the most extensive among all vendors. Its accessibility plan has affected many people and companies. (Carter, 2001)
+          </p>
+          <br>
+          <p>
+            Microsoft officially approved the accessibility policy called Enable in 1995. This policy has four goals: (Carter, 2001)
+          </p>
+          <br>
+          <div class="box">
+            <div class="media">
+              <ol>
+                <li>“Make accessible products”</li>
+                <br>
+                <li>“Build strong bonds with the disabled community”</li>
+                <br>
+                <li>“Equip developers”</li>
+                <br>
+                <li>“inform customers about the accessibility of products”</li>
+              </ol>
+            </div>
+          </div>
+          <br>
+          <p>
+            For example, the accessibility strategy is embodied in Microsoft's Internet Explorer (IE) product. Compared with the previous version, IE 5 adds some new features that bring convenience to people with mobility impairments
+            . Such as auto completion, auto correction and auto search. These new features can allow users to reduce the use of the keyboard, but also reduce the possibility of input errors. IE 5 also provides a Web attachment toolkit
+            , which allows users to adjust the font and color of text, background and links, use the keyboard to navigate the page, create their own cascading style sheet to view page customization features, and use a screen reader to display ALT text. (Carter, 2001)
+          </p>
+          <br>
+          <p>
+            Microsoft also provides recommended code examples and checklists for testing the accessibility of web pages. There are many other resources on the Microsoft website, including: (Carter, 2001)
+          </p>
+          <br>
+          <div class="box">
+            <div class="media">
+              <ol>
+                <li>Articles</li>
+                <br>
+                <li>Step-by-step guides</li>
+                <br>
+                <li>Descriptions of assistive technologies</li>
+                <br>
+                <li>Accessible documentation and support</li>
+                <br>
+                <li>A valuable set of procedures that developers can use to make their products more accessible</li>
+              </ol>
+            </div>
+          </div>
+          <p class="subtitle">
+            <a href="about.html#Reference">
+              <span class="tag is-dark">Reference</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <article class="message">
+      <div id="W3C">
+        <div class="message-header">
+          <p>Guidelines from the World Wide Web Consortium(W3C)</p>
+        </div>
+        <div class="message-body">
+          <p>
+            “World Wide Web Consortium’s Web Accessibility Initiative The World Wide Web Consortium (W3C), an organization interested in all aspects of the web, sponsors the most extensive set of programs and initiatives devoted to the issue of web accessibility for people with disabilities. W3C’s main umbrella under which these efforts are collected is known as the Web Accessibility Initiative (WAI). “(Carter, 2001)
+          </p>
+          <br>
+          <p>
+            According to the W3C, the WAI mainly focus on five primary areas of work to pursue web accessibility: (Carter, 2001)
+          </p>
+          <br>
+          <div class="box">
+            <div class="media">
+              <ol>
+                <li>“Addressing accessibility issues in the technology of the Web”</li>
+                <br>
+                <li>“Creating guidelines for browsers, authoring tools, and content creation”</li>
+                <br>
+                <li>“Developing evaluation and validation tools for accessibility”</li>
+                <br>
+                <li>“Conducting education and outreach”</li>
+                <br>
+                <li>“Tracking research and development” </li>
+              </ol>
+            </div>
+          </div>
+          <br>
+          <p>
+            The WAI has issued many documents for web developers. Following are the three major sets of guidelines in terms of web accessibility: (Carter, 2001)
+          </p>
+          <br>
+          <div class="box">
+            <div class="media">
+              <ol>
+                <li>Web Content Accessibility Guidelines. </li>
+                <br>
+                <li>Authoring Tool Accessibility Guidelines </li>
+                <br>
+                <li>User Agent Accessibility Guidelines. </li>
+              </ol>
+            </div>
+          </div>
+          <br>
+          <p>
+            <strong>Web Content Accessibility Guidelines</strong> are based on two themes: (Carter, 2001)
+          </p>
+          <br>
+          <div class="box">
+            <div class="media">
+              <ol>
+                <li>
+                  “Ensuring graceful transformation” (“making Web content accessible and clear despite a person’s disability and the limitations of any hardware of software he or she is using”)
+                </li>
+                <br>
+                <li>
+                  “Making content understandable and navigable” (“by using clear language and navigation so that people with disabilities can quickly and easily orient themselves in a page”).
+                </li>
+              </ol>
+            </div>
+          </div>
+          <br>
+          <p>
+            <strong>Authoring Tool Accessibility Guidelines</strong> are “addressed to developers of web authoring tools (including web editors, word processors, desktop-publishing software, and software for turning desktop-published documents into HTML), are intended to ensure that authoring tools be accessible to authors regardless of disability, that they produce accessible content by default, and that they assist the author in creating accessible content. “ (Carter, 2001)
+          </p>
+          <br>
+          <p>
+            <strong>User Agent Accessibility Guidelines</strong> are “addressed to developers of browsers and other software that presents websites on a user’s screen. A user agent that conforms to these guidelines will be accessible by virtue of its own interface and by virtue of its ability to communicate with assistive technologies. “(Carter, 2001)
+          </p>
+          <br>
+          <p>
+            The Web Content Accessibility Guidelines 1.0 developed by W3C as part of WAI is the most comprehensive and influential accessibility policy that has been gradually created." (Carter, 2001)
+          </p>
+          <br>
+          <p>
+            Besides its contribution to the W3C's Web Content Accessibility Guidelines, the Trace Center has also initiated programs (eg. “he Cooperative Electronic Library on Disability) and technology (eg. the touchscreen accessibility feature called EZ Access)” (Carter, 2001)
+          </p>
+          <br>
+          <p class="subtitle">
+            <a href="about.html#Reference">
+              <span class="tag is-dark">Reference</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <article class="message">
+      <div id="CPB">
+        <div class="message-header">
+          <p>Tools from CPB/ WGBH National Center</p>
+        </div>
+        <div class="message-body">
+          <p>
+            CPB/ WGBH National Center for Accessible Media (NCAM) founded a Web Access Project in 1996. This project “researches, develops and tests methods of integrating access technologies (such as captioning and audio description) and new Web tools into a World Wide Web site, making it fully accessible to blind or deaf Internet users. (Carter, 2001)” The Web Access Project is a leading organization in making multimedia accessible to disabled people. (Carter, 2001)
+          </p>
+          <br>
+          <p class="subtitle">
+            <a href="about.html#Reference">
+              <span class="tag is-dark">Reference</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <article class="message">
+      <div id="WebABLE">
+        <div class="message-header">
+          <p>Database from WebABLE</p>
+        </div>
+        <div class="message-body">
+          <p>
+            WebABLE! is an organization aiming to improve web accessibility by research and education. This organization has: (Carter, 2001)
+          </p>
+          <br>
+          <div class="box">
+            <div class="media">
+              <ol>
+                <li>“An extensive accessibility-resource database” (“which can be searched by disability, by type of organization, and by 231 country”) </li>
+                <br>
+                <li>Workshop</li>
+                <br>
+                <li>Conference listings</li>
+                <br>
+                <li>Discussion boards</li>
+              </ol>
+            </div>
+          </div>
+          <p class="subtitle">
+            <a href="about.html#Reference">
+              <span class="tag is-dark">Reference</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+</section>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      Group E &copy;2020
+      <br>
+      All rights reserved.
+      <br>
+      <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+    </p>
+  </div>
+</footer>
+</body>
+</html>
